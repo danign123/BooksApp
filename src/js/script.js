@@ -64,7 +64,7 @@
     initActions(){
       const thisBookList = this;
       thisBookList.element = document.querySelector(select.containerOf.bookList);
-      thisBookList.element.addEventListener('click', function(event){
+      thisBookList.element.addEventListener('dblclick', function(event){
         event.preventDefault();
         const image = event.target.offsetParent;
         const idBook = image.getAttribute('data-id');
